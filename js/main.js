@@ -170,7 +170,6 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-// якорная ссылка до reviews 
 
 
 

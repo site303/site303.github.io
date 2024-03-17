@@ -390,7 +390,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
-  /* height: 45%; */
   background: linear-gradient(120deg, rgb(225, 234, 62), rgb(103, 129, 92));
   padding: 60px;
   border-radius: 5px;
