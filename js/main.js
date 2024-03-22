@@ -90,30 +90,30 @@ links.forEach(link => {
 // изменение цвета при наведении на контакты
 // 1 вариант
 
-let contactsContainer = document.querySelector('.footer-top_menu-items');
+// let contactsContainer = document.querySelector('.footer-top_menu-items');
 
-let contactsItems = contactsContainer.getElementsByTagName('li');
-contactsItems = Array.from(contactsItems);
-contactsItems.forEach((item) => {
-  let contactLinks = item.getElementsByTagName('a');
-  contactLinks = Array.from(contactLinks);
-  contactLinks.forEach((contactLink) =>{
-    contactSvgs = contactLink.getElementsByTagName('svg');
-    let contactSvg = contactSvgs[0];
-    contactSpans = contactLink.getElementsByTagName('span');
-    let contactSpan = contactSpans[0];
+// let contactsItems = contactsContainer.getElementsByTagName('li');
+// contactsItems = Array.from(contactsItems);
+// contactsItems.forEach((item) => {
+//   let contactLinks = item.getElementsByTagName('a');
+//   contactLinks = Array.from(contactLinks);
+//   contactLinks.forEach((contactLink) =>{
+//     contactSvgs = contactLink.getElementsByTagName('svg');
+//     let contactSvg = contactSvgs[0];
+//     contactSpans = contactLink.getElementsByTagName('span');
+//     let contactSpan = contactSpans[0];
 
-    contactLink.addEventListener('mouseover', function(){
-      contactSvg.style.fill = "rgb(94, 116, 51)";
-      contactSpan.style.color = "rgb(94, 116, 51)";
-    })
+//     contactLink.addEventListener('mouseover', function(){
+//       contactSvg.style.fill = "rgb(94, 116, 51)";
+//       contactSpan.style.color = "rgb(94, 116, 51)";
+//     })
     
-    contactLink.addEventListener('mouseout', function(){
-      contactSvg.style.fill = "rgb(45 61 37)";
-      contactSpan.style.color = "rgb(45 61 37)";
-    }) 
-  })
-})
+//     contactLink.addEventListener('mouseout', function(){
+//       contactSvg.style.fill = "rgb(45 61 37)";
+//       contactSpan.style.color = "rgb(45 61 37)";
+//     }) 
+//   })
+// })
 
 // изменение цвета при наведении на контакты
 //  2 вариант

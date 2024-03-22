@@ -68,7 +68,6 @@
 }
 
 .header__top-inner {
-  /* изменила */
   padding-top: 28px;
   display: flex;
   justify-content: space-between;
@@ -107,7 +106,7 @@
   z-index: 40;
 }
 
-.arrow-up svg:hover {
+.arrow-up:hover svg {
   stroke:rgb(102, 153, 0);
 }
 
@@ -157,10 +156,6 @@
 
 .service {
   padding: 0 0 40px;
-}
-
-.service__inner {
-  /* color: green; */
 }
 
 .service__inner-bottom {
@@ -215,11 +210,6 @@
   letter-spacing: 1.1;
 }
 
-.service-icon {
-  /* display: inline-block;
-  text-align: center; */
-}
-
 .map {
   padding: 60px 0 20px;
   width: 100%;
@@ -258,7 +248,6 @@
 }
 
 .swiper-slide {
-  /* add */
   flex-direction: column;
   align-items: center;
   display: flex;
@@ -268,7 +257,6 @@
 
 .reviews__item-link {
   padding: 4px 6px;
-  /* text-decoration: underline; */
   border-bottom: 1px solid rgb(45 61 37);
   color: rgb(45 61 37);
 }
@@ -284,7 +272,6 @@
 }
 
 .swiper-button-next {
-  /* position: absolute; */
   top: 95%;
   left: 57%;
   color: rgb(45 61 37);
@@ -356,7 +343,6 @@
 .close-modal {
   position: absolute;
   top: 12px;
-  /* right: 12px; */
   right: 20px;
   font-size: 50px;
   color: rgb(45 61 37);
@@ -369,7 +355,6 @@
   color:rgb(45 61 37);
   font-weight: bold;
   font-size: 19px;
-  /* font-size: 16px; */
 }
 
 .modal form [name="textarea"]{
@@ -377,7 +362,6 @@
   width: 96%;
   padding: 10px 16px;
   font-size: 18px;
-  /* font-size: 14px; */
   border: 2px solid rgb(45 61 37);
   border-radius: 4px;
 }
@@ -395,7 +379,6 @@
   width: 70%;
   background: linear-gradient(120deg, rgb(225, 234, 62), rgb(103, 129, 92));
   padding: 60px;
-  /* padding: 20px; */
   border-radius: 5px;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
   z-index: 10;
@@ -411,9 +394,6 @@
   backdrop-filter: blur(3px);
   z-index: 5;
 }
-
-
-
 
 .hr {
   border: none;
@@ -435,16 +415,15 @@
   align-items: center;
 }
 
-/* .footer-top_menu-link:hover {
-  fill: rgb(116, 51, 114);
+/* при наведении на svg + span   */
+
+.footer-top_menu-link:hover svg {
+  fill: rgb(94, 116, 51);
+}
+
+.footer-top_menu-link:hover .footer-top_menu-item_span {
   color: rgb(94, 116, 51);
-} */
-
-/* .footer-top_menu-link span:hover {
-  color: rgb(94, 116, 51);
-} */
-
-
+}
 
 
 .footer-top_social-link-twitter:hover,
@@ -488,17 +467,7 @@
   color: #bec85f;
   outline: 0;
   box-shadow: 0 0 40px 40px rgb(48, 61, 43) inset;
-  /* border: none; */
 }
-
-
-/* .reserve-btn {
-  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-} */
-
-/* .reserve-btn:hover {
-  box-shadow: 0 0 40px 40px rgb(48, 61, 43) inset;
-} */
 
 /* прыгучесть заголовка */
 
@@ -536,18 +505,15 @@
 .menu__list-link {
   display: inline-block;
   color: #fff;
-  /* Цвет обычной ссылки */
   line-height: 1.8;
   text-transform: uppercase;
 }
 
 .menu__list-link:after {
   background-color: rgb(23, 77, 101);
-  /* Цвет линии при наведении на нее курсора мыши */
   display: block;
   content: "";
   height: 2px;
-  /* Высота линии */
   width: 0%;
   -webkit-transition: width .3s ease-in-out;
   -moz--transition: width .3s ease-in-out;
@@ -583,8 +549,6 @@
 /* сияние логотипа */
 
 .logo svg:hover {
-  /* stroke:rgba(23, 77, 101, 0.7); */
-  /* stroke-width:2; */
   stroke: rgb(93, 233, 233);
   stroke-width: 1.6;
 }
@@ -656,12 +620,10 @@ body.lock {
 @media(max-width: 1660px) {
 
   .header-content {
-    /* height: 800px; */
     height: 890px;
   }
 
   .nature {
-    /* height: 600px; */
     height: 890px;
   }
 
@@ -670,7 +632,6 @@ body.lock {
   }
 
   .map {
-    /* height: 694px; */
     height: 890px;
   }
 
@@ -687,9 +648,6 @@ body.lock {
 }
 
 @media(max-width: 1199px) {
-  /* .btn-up-svg {
-    display: none;
-  } */
 
   .container {
     width: 960px;
@@ -726,9 +684,6 @@ body.lock {
     width: 100%;
   }
 
-  /* .horse-video{
-    height: 1100px;
-  } */
   .horse-video,
   .video-overlay {
     height: 928px;
@@ -1012,6 +967,7 @@ body.lock {
   }
 
   .modal {
+    max-width: 300px;
     padding: 36px;
   }
 
